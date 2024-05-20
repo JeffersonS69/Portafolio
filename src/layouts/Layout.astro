@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+}
+import "../styles/global.css";
+import SpaceGenerator from "../components/SpaceGenerator.astro";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" transition:animate="none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <SpaceGenerator>
+      <main>
+        <slot />
+      </main>
+    </SpaceGenerator>
+  </body>
+</html>
+
+<script></script>

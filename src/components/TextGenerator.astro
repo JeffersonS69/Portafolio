@@ -1,0 +1,52 @@
+---
+import "../styles/textgenerator.css";
+---
+
+<div class="text-container">
+  <div class="text-animation"></div>
+  <div class="writing-bar"></div>
+</div>
+
+<script>
+  const animatedText = () => {
+    const listWords = ["Desarrollador web", "Ingeniero en informática"];
+    let wordsCounter = -1;
+    let levelArray = 0;
+    const containerAnimation = document.querySelector(
+      ".text-animation"
+    ) as HTMLElement;
+    const paintText = () => {
+      wordsCounter++;
+      containerAnimation.textContent = listWords[levelArray].slice(
+        0,
+        wordsCounter
+      );
+
+      if (wordsCounter === listWords[levelArray].length) {
+        clearInterval(interval);
+
+        setTimeout(() => {
+          interval = setInterval(() => {
+            wordsCounter--;
+            containerAnimation.textContent = listWords[levelArray].slice(
+              0,
+              wordsCounter
+            );
+            if (wordsCounter === 0) {
+              clearInterval(interval);
+              levelArray++;
+              if (levelArray === listWords.length) {
+                levelArray = 0;
+              }
+              setTimeout(() => {
+                interval = setInterval(paintText, 150);
+              }, 1000);
+            }
+          }, 150);
+        }, 1000);
+      }
+    };
+    let interval = setInterval(paintText, 150);
+  };
+  window.addEventListener("load", animatedText);
+</script>

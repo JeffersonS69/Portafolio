@@ -1,0 +1,26 @@
+.text-container {
+  display: flex;
+  align-items: center;
+  height: 0px;
+  font-size: 1.5rem;
+  gap: 8px;
+}
+
+.text-animation {
+  color: #007090;
+}
+
+.writing-bar {
+  width: 2px;
+  height: 20px;
+  margin-left: 2px;
+  background-color: #007090;
+  transform: rotateZ(10deg);
+  animation: bar-writing 1s ease infinite;
+}
+
+@keyframes bar-writing {
+  50% {
+    height: 5px;
+  }
+}
