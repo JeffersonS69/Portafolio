@@ -107,7 +107,7 @@ import profile from "../assets/perro.jpg";
     align-items: center;
     background-color: #eaebed;
     width: auto;
-    height: 30%;
+    height: auto;
     gap: 20px;
     border-radius: 15px;
     padding: 20px;
@@ -117,13 +117,11 @@ import profile from "../assets/perro.jpg";
   @media (max-width: 800px) {
     .profile {
       flex-direction: column;
-      width: auto;
-      height: auto;
     }
     .profile-picture {
-    width: 100% !important;
-    height: 280px !important;
-  }
+      width: 100% !important;
+      height: 280px !important;
+    }
     .flex-content-right {
       flex: 100%;
     }
@@ -133,6 +131,29 @@ import profile from "../assets/perro.jpg";
     .bar {
       width: 100% !important;
       height: 5px !important;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .profile {
+      width: auto;
+      height: auto;
+      gap: 10px;
+    }
+    .profile-picture {
+      width: 100% !important;
+      height: 280px !important;
+    }
+
+    h1 {
+      font-size: 23px !important;
+    }
+
+    p{
+      font-size: 12px;
+    }
+    .flex-content-right {
+      gap: 25px !important;
     }
   }
 
