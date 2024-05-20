@@ -1,16 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import TextGenerator from "../components/TextGenerator.astro";
+import profile from "./src/assets/perro.jpg";
 ---
 
 <Layout title="Portafolio">
   <section class="main-box">
     <article class="profile">
-      <img
-        class="profile-picture"
-        src="./public/perro.jpg"
-        alt="foto de perfil"
-      />
+      <img class="profile-picture" src=`${profile.src}` alt="foto de perfil" />
       <div class="bar"></div>
       <div class="flex-content-right">
         <div class="content-text">
@@ -206,7 +203,7 @@ import TextGenerator from "../components/TextGenerator.astro";
     gap: 20px;
   }
 
-  h1{
+  h1 {
     font-size: 40px;
     margin: 0%;
   }
