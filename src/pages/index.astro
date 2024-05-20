@@ -8,7 +8,7 @@ import profile from "../assets/perro.jpg";
   <section class="main-box">
     <article class="profile">
       <img class="profile-picture" src=`${profile.src}` alt="foto de perfil" />
-      <div class="bar"></div>
+      <hr class="bar" />
       <div class="flex-content-right">
         <div class="content-text">
           <div>
@@ -117,7 +117,13 @@ import profile from "../assets/perro.jpg";
   @media (max-width: 800px) {
     .profile {
       flex-direction: column;
+      width: auto;
+      height: auto;
     }
+    .profile-picture {
+    width: 100% !important;
+    height: 280px !important;
+  }
     .flex-content-right {
       flex: 100%;
     }
@@ -125,7 +131,8 @@ import profile from "../assets/perro.jpg";
       flex: 100%;
     }
     .bar {
-      width: 100%;
+      width: 100% !important;
+      height: 5px !important;
     }
   }
 
@@ -145,8 +152,10 @@ import profile from "../assets/perro.jpg";
     box-shadow: 1px 2px 5px #a3bac3;
   }
   .bar {
-    border: 2px solid #636363;
+    border: none;
+    width: 3px;
     height: 100%;
+    background-color: #636363;
   }
   .list-icons {
     display: flex;
