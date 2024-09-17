@@ -261,6 +261,12 @@ article {
   .img-about {
     width: 100%;
   }
+
+  .text-scroll {
+    overflow: scroll;
+    overflow-y: auto;
+    max-height: 350px;
+  }
 }
 
 @media (min-width: 1553px) {
