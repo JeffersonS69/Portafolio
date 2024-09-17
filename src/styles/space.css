@@ -1,0 +1,24 @@
+.space {
+    --size: 2px;
+    --space-layer: 4vw 50vh 0 #fff, 18vw 88vh 0 #fff;
+    width: var(--size);
+    height: var(--size);
+    background: #fff;
+    box-shadow: var(--space-layer);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 75%;
+    animation: moveStars var(--duration) linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveStars {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100vh);
+    }
+}

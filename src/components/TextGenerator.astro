@@ -1,7 +1,3 @@
----
-import "../styles/textgenerator.css";
----
-
 <div class="text-container">
   <div class="text-animation"></div>
   <div class="writing-bar"></div>
@@ -13,13 +9,13 @@ import "../styles/textgenerator.css";
     let wordsCounter = -1;
     let levelArray = 0;
     const containerAnimation = document.querySelector(
-      ".text-animation"
+      ".text-animation",
     ) as HTMLElement;
     const paintText = () => {
       wordsCounter++;
       containerAnimation.textContent = listWords[levelArray].slice(
         0,
-        wordsCounter
+        wordsCounter,
       );
 
       if (wordsCounter === listWords[levelArray].length) {
@@ -30,7 +26,7 @@ import "../styles/textgenerator.css";
             wordsCounter--;
             containerAnimation.textContent = listWords[levelArray].slice(
               0,
-              wordsCounter
+              wordsCounter,
             );
             if (wordsCounter === 0) {
               clearInterval(interval);
