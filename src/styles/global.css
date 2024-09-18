@@ -13,6 +13,8 @@ html {
   position: fixed;
   inset: 0;
   z-index: -1;
+  box-sizing: border-box;
+  height: auto;
 }
 
 p {
@@ -38,7 +40,7 @@ article {
   height: 100vh;
 }
 
-.page-works{
+.page-works {
   height: auto;
 }
 
@@ -171,7 +173,7 @@ article {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
-  width: 80%;
+  width: 88%;
   background-color: #131314;
   border-radius: 12px;
   gap: 1.5rem;
@@ -193,11 +195,18 @@ article {
 }
 
 .card-text {
+  display: flex;
+  flex-direction: column;
   width: 50%;
+  gap: 1rem;
 }
 
 .card-text h1 {
   font-size: 1.5rem;
+  margin: 0px;
+}
+
+.card-text p {
   margin: 0px;
 }
 
@@ -220,12 +229,43 @@ article {
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
+.btn-works a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.group-skills{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 15px;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: #fff;
+  padding:8px;
+  gap: 6px;
+  border-radius: 12px;
+}
+
 .btn-works button:hover {
   transform: translateY(-5px);
-  color: #126b8f;
-  border-color: #126b8f;
+  color: #FFA611;
+  border-color: #FFA611;
   font-weight: 600;
 }
+
+.btn-works button:hover svg {
+  stroke: #FFA611;
+}
+
 
 @media (max-width: 512px) {
   article {
