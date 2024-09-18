@@ -253,6 +253,7 @@ article {
   padding:8px;
   gap: 6px;
   border-radius: 12px;
+  pointer-events: none;
 }
 
 .btn-works button:hover {
