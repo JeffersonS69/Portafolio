@@ -28,8 +28,18 @@ article {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  height: 100vh;
   padding-left: 70px;
+}
+
+.page-home,
+.page-about,
+.page-skills,
+.page-contact {
+  height: 100vh;
+}
+
+.page-works{
+  height: auto;
 }
 
 .box-home {
@@ -106,7 +116,7 @@ article {
   width: 100%;
   align-items: center;
   padding: 2rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .img-about {
@@ -135,7 +145,6 @@ article {
 
 .box-works {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -161,8 +170,8 @@ article {
 .card-works {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   padding: 1.5rem;
+  width: 80%;
   background-color: #131314;
   border-radius: 12px;
   gap: 1.5rem;
@@ -175,9 +184,12 @@ article {
 }
 
 .card-works img {
-  height: 300px;
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
   image-rendering: auto;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
 }
 
 .card-text {
@@ -265,6 +277,20 @@ article {
   .text-scroll {
     overflow: scroll;
     max-height: 230px;
+    overflow-x: hidden;
+  }
+
+  .card-works {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .card-text {
+    width: 100%;
+  }
+
+  .card-img {
+    width: 100%;
   }
 }
 
@@ -282,4 +308,14 @@ article {
   .btn-home {
     font-size: 16px;
   }
+
+  .img-about img {
+    width: 380px;
+    height: 400px;
+  }
+
+  .card-works {
+    width: 70%;
+  }
+
 }

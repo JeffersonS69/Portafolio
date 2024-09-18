@@ -2,9 +2,9 @@
 import Layout from "@/layouts/Layout.astro";
 import foto from "@/assets/foto3.png";
 import web from "@/assets/web6.png";
-/* import deone from "@/assets/deone.png"; */
+import deone from "@/assets/deone.png";
+import pagegif from "@/assets/page-gif.png";
 ---
-
 <Layout title="Portafolio">
   <article id="home" class="page-home">
     <section class="box-home">
@@ -54,7 +54,7 @@ import web from "@/assets/web6.png";
           utilizado para darles vida.
         </p>
       </div>
-      <!-- <div class="card-works">
+      <div class="card-works">
         <div class="card-img">
           <img src=`${deone.src}` />
         </div>
@@ -85,13 +85,13 @@ import web from "@/assets/web6.png";
         <div class="card-img">
           <img src=`${pagegif.src}` />
         </div>
-      </div> -->
+      </div>
     </section>
   </article>
-  <article id="skills">
+  <article id="skills" class="page-skills">
     <h1>skills</h1>
   </article>
-  <article id="contact">
+  <article id="contact" class="page-contact">
     <h1>contact</h1>
   </article>
 </Layout>
