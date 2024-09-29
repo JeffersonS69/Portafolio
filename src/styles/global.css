@@ -17,11 +17,15 @@ html {
   height: auto;
 }
 
-p {
+p,
+button {
   font-family: "Space Mono", system-ui;
 }
 
-h1 {
+h1,
+label,
+textarea,
+input {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 
@@ -35,12 +39,12 @@ article {
 
 .page-home,
 .page-about,
-.page-skills,
 .page-contact {
   height: 100vh;
 }
 
-.page-works {
+.page-works,
+.page-experience {
   height: auto;
 }
 
@@ -67,7 +71,7 @@ article {
 }
 
 .box-home span {
-  filter: drop-shadow(0 0 5px rgba(0, 204, 255, 0.8));
+  filter: drop-shadow(0 0 5px #00ccffcc);
 }
 
 .text-home {
@@ -97,7 +101,6 @@ article {
   border: 2px solid transparent;
   border-radius: 8px;
   font-size: 14px;
-  font-family: "Space Mono", system-ui;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
@@ -140,9 +143,8 @@ article {
 }
 
 .text-about h1 {
-  font-size: 2.5rem;
-  margin: 16px 0px;
-  filter: drop-shadow(0 0 5px rgba(0, 204, 255, 0.8));
+  font-size: 5rem;
+  filter: drop-shadow(0 0 5px #FFA611);
 }
 
 .box-works {
@@ -157,9 +159,9 @@ article {
 }
 
 .title-works h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin: 0px;
-  filter: drop-shadow(0 0 5px rgba(0, 204, 255, 0.8));
+  filter: drop-shadow(0 0 5px #00ccffcc);
 }
 
 .title-works {
@@ -234,7 +236,7 @@ article {
   color: #fff;
 }
 
-.group-skills{
+.group-skills {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
@@ -250,7 +252,7 @@ article {
   font-weight: 600;
   font-size: 12px;
   background-color: #fff;
-  padding:8px;
+  padding: 8px;
   gap: 6px;
   border-radius: 12px;
   pointer-events: none;
@@ -265,6 +267,113 @@ article {
 
 .btn-works button:hover svg {
   stroke: #FFA611;
+}
+
+.box-experience {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(19, 19, 20, 0.4);
+  padding: 2rem 5rem;
+}
+
+.text-experience h1 {
+  font-size: 5rem;
+  filter: drop-shadow(0 0 5px #FFA611);
+}
+
+.card-exp {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-left: solid 2px #FFA611;
+  gap: 1.5rem;
+}
+
+.content-exp p,
+h1 {
+  margin: 0px 0px;
+}
+
+.cua {
+  position: absolute;
+  left: -6px;
+  margin-top: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #FFA611;
+}
+
+.box-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.card-contact {
+  background-color: #131314;
+  width: 60%;
+  border-radius: 12px;
+}
+
+.card-contact h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.form-contact input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-contact input:focus,
+textarea:focus {
+  outline: 2px solid #FFA611;
+  outline-offset: 2px;
+}
+
+.form-contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  resize: none;
+  height: 80px;
+  scrollbar-color: #FFA611 #131314;
+}
+
+.form-contact button {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  background-color: #131314;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-contact button:hover {
+  transform: translateY(-5px);
+  border-color: #FFA611;
+  color: #FFA611;
 }
 
 
@@ -309,6 +418,7 @@ article {
 
   .text-about h1 {
     text-align: center;
+    font-size: 2.5rem;
   }
 
   .img-about {
@@ -332,6 +442,29 @@ article {
 
   .card-img {
     width: 100%;
+  }
+
+  .title-works h1 {
+    font-size: 2.5rem;
+  }
+
+  .box-experience {
+    padding: 2rem;
+  }
+  
+  .text-experience h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-contact {
+    background-color: #131314;
+    width: 95%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .card-contact h1 {
+    font-size: 1.5rem;
   }
 }
 

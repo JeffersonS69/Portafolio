@@ -27,7 +27,7 @@
      text-decoration: none;
  }
 
- nav a.active {
+ nav a.active{
      opacity: 0.5;
      pointer-events: none;
  }
