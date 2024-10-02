@@ -48,21 +48,26 @@ article {
   height: auto;
 }
 
+/* HOME */
+
 .box-home {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   padding: 2rem;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 20px;
   overflow: hidden;
 }
 
-.box-home div {
+/* .box-home div {
   min-width: 500px;
+} */
+
+.content1{
+  width: 50%;
 }
 
 .box-home h1 {
@@ -111,6 +116,39 @@ article {
   font-weight: 600;
 }
 
+/* .card-home {
+  background-color: #131314;
+  width: 50%;
+  height: 80%;
+  border-radius: 12px;
+  position: relative;
+}
+
+.box-circle {
+  display: flex;
+  padding: 18px;
+  gap: 8px;
+}
+
+.color-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(1) {
+  background-color: #c71e1e;
+}
+
+.color-circle:nth-child(2) {
+  background-color: #e0dd10;
+}
+
+.color-circle:nth-child(3) {
+  background-color: #40c717;
+} */
+
+/* ABOUT */
 
 .box-about {
   display: flex;
@@ -451,7 +489,7 @@ textarea:focus {
   .box-experience {
     padding: 2rem;
   }
-  
+
   .text-experience h1 {
     font-size: 2.5rem;
   }
@@ -462,7 +500,7 @@ textarea:focus {
     border-radius: 12px;
     overflow: hidden;
   }
-  
+
   .card-contact h1 {
     font-size: 1.5rem;
   }
