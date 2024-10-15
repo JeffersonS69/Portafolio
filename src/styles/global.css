@@ -412,10 +412,6 @@ textarea:focus {
 
 @media (max-width: 768px) {
 
-  .box-img {
-    display: none;
-  }
-
   .box-about {
     flex-direction: column;
     justify-content: center;
@@ -474,6 +470,12 @@ textarea:focus {
 
   .card-contact h1 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .box-img {
+    display: none;
   }
 }
 
