@@ -123,38 +123,6 @@ article {
   font-weight: 600;
 }
 
-/* .card-home {
-  background-color: #131314;
-  width: 50%;
-  height: 80%;
-  border-radius: 12px;
-  position: relative;
-}
-
-.box-circle {
-  display: flex;
-  padding: 18px;
-  gap: 8px;
-}
-
-.color-circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-
-.color-circle:nth-child(1) {
-  background-color: #c71e1e;
-}
-
-.color-circle:nth-child(2) {
-  background-color: #e0dd10;
-}
-
-.color-circle:nth-child(3) {
-  background-color: #40c717;
-} */
-
 /* ABOUT */
 
 .box-about {
@@ -512,11 +480,15 @@ textarea:focus {
 @media (min-width: 1553px) {
 
   .box-img {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   .box-home h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+  }
+
+  .box-home p {
+    font-size: 1.2rem;
   }
 
   .img-web {
@@ -526,7 +498,7 @@ textarea:focus {
   }
 
   .btn-home {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .img-about img {
