@@ -23,6 +23,7 @@ button {
 }
 
 h1,
+h2,
 label,
 textarea,
 input {
@@ -127,13 +128,55 @@ article {
 
 .box-about {
   display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   gap: 1rem;
+}
+
+.content-about {
+  width: 60%;
+  background-color: #131314;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.content-about img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 12px;
+  margin-top: 14px;
+  border: 2px dashed #00ccffcc;
+}
+
+.content-about h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0px;
+  filter: drop-shadow(0 0 5px #00ccffcc);
+}
+
+.content-about h2 {
+  text-align: center;
+}
+.content-about p {
+  text-align: left;
+}
+
+.content-about button {
+  background-color: #131314;
+  color: #fff;
+  border: 2px solid transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
 }
 
 .img-about {
@@ -295,7 +338,7 @@ article {
 .text-experience h1 {
   font-size: 5rem;
   margin: 0px;
-  filter: drop-shadow(0 0 5px #FFA611);
+  filter: drop-shadow(0 0 5px #00ccffcc);
 }
 
 .card-exp {
@@ -316,7 +359,7 @@ article {
   padding: 1rem;
 }
 
-.content-exp::after{
+.content-exp::after {
   content: "";
   position: absolute;
   margin-top: 4px;
@@ -329,7 +372,7 @@ article {
 .content-exp h1 {
   font-size: 2rem;
   margin: 0px 0px 4px;
-  color: #FFA611;
+  color: #00ccffcc;
 }
 
 .content-exp p {
@@ -338,7 +381,7 @@ article {
   opacity: 0.8;
 }
 
-.content-exp p:nth-of-type(4){
+.content-exp p:nth-of-type(4) {
   font-size: 1rem;
   padding-right: 40px;
   opacity: 1;
@@ -513,7 +556,7 @@ textarea:focus {
     display: none;
   }
 
-  .content-exp { 
+  .content-exp {
     width: 100%;
   }
 }
@@ -558,12 +601,12 @@ textarea:focus {
   .content-exp h1 {
     font-size: 2.5rem;
   }
-  
+
   .content-exp p {
     font-size: 1rem;
   }
-  
-  .content-exp p:nth-of-type(4){
+
+  .content-exp p:nth-of-type(4) {
     font-size: 1.2rem;
   }
 
