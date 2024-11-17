@@ -1,7 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import foto from "@/assets/foto3.png";
-import web from "@/assets/web6.png";
 import deone from "@/assets/deone.png";
 import pagegif from "@/assets/page-gif.png";
 import Developer from "@/components/Developer.astro";
@@ -450,27 +449,6 @@ import Developer from "@/components/Developer.astro";
           <button id="toggleButton2">Sobre mi</button>
         </div>
       </div>
-      <!-- <div class="img-about">
-        <img src=`${foto.src}` alt="Jefferson Garcia" />
-      </div>
-      <div class="text-about">
-        <h1>Sobre mi</h1>
-        <div class="text-scroll">
-          <p>
-            Hola, soy Jefferson Garcia, un apasionado por la tecnología y el
-            desarrollo web. Me encanta aprender cosas nuevas y estar en
-            constante crecimiento. Actualmente me encuentro en la búsqueda de
-            nuevas oportunidades laborales para seguir creciendo como
-            profesional.
-          </p>
-          <p>
-            Me considero una persona proactiva, responsable, con capacidad para
-            trabajar en equipo y bajo presión. Me gusta afrontar nuevos retos y
-            aprender de ellos.
-          </p>
-          <p>Si deseas saber más sobre mi, no dudes en contactarme.</p>
-        </div>
-      </div> -->
     </section>
   </article>
   <article id="works" class="page-works">
@@ -489,8 +467,8 @@ import Developer from "@/components/Developer.astro";
         <div class="card-text">
           <h1>Deone</h1>
           <p>
-            Deone es una plataforma de educación en línea que ofrece cursos
-            gratuitos y de pago en diferentes áreas de conocimiento.
+            Deone es una plataforma de compra y venta en línea que ofrece
+            productos artecanales hecho en Esmeraldas, Ecuador.
           </p>
           <h1>Tecnologías</h1>
           <div class="group-skills">
@@ -553,7 +531,7 @@ import Developer from "@/components/Developer.astro";
                     stroke-linejoin="round"></path>
                 </g></svg
               >
-              <p>Tailwind</p>
+              <p>TailwindCSS</p>
             </div>
             <div class="skills">
               <svg
@@ -573,6 +551,45 @@ import Developer from "@/components/Developer.astro";
                 </g></svg
               >
               <p>Firebase</p>
+            </div>
+            <div class="skills">
+              <svg
+                width="19px"
+                height="19px"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.49998 1L6.92321 2.00307L1.17498 12L0.599976 13H1.7535H13.2464H14.4L13.825 12L8.07674 2.00307L7.49998 1ZM7.49998 3.00613L2.3285 12H12.6714L7.49998 3.00613Z"
+                    fill="#000000"></path>
+                </g></svg
+              >
+              <p>Vercel</p>
+            </div>
+            <div class="skills">
+              <svg
+                fill="#fc6d26"
+                width="19px"
+                height="19px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.381966,9 L17.1055728,3.5527864 C17.510563,2.74280594 18.6976082,2.84525834 18.9578263,3.71265211 L21.9578263,13.7126521 C22.0764694,14.1081293 21.9398565,14.5358621 21.6139406,14.7893522 L12.6139406,21.7893522 C12.2528301,22.0702159 11.7471699,22.0702159 11.3860594,21.7893522 L2.38605939,14.7893522 C2.06014352,14.5358621 1.92353056,14.1081293 2.04217371,13.7126521 L5.04217371,3.71265211 C5.30239185,2.84525834 6.48943696,2.74280594 6.89442719,3.5527864 L9.61803399,9 L14.381966,9 Z M17.7667436,6.7025808 L15.8944272,10.4472136 C15.7250352,10.7859976 15.3787721,11 15,11 L9,11 C8.62122794,11 8.27496482,10.7859976 8.10557281,10.4472136 L6.23325641,6.7025808 L4.15466686,13.6312126 L12,19.7331384 L19.8453331,13.6312126 L17.7667436,6.7025808 Z"
+                  ></path>
+                </g></svg
+              >
+              <p>Gitlab</p>
             </div>
           </div>
           <div class="btn-works">
@@ -626,8 +643,8 @@ import Developer from "@/components/Developer.astro";
         <div class="card-text">
           <h1>GifExpert</h1>
           <p>
-            Deone es una plataforma de educación en línea que ofrece cursos
-            gratuitos y de pago en diferentes áreas de conocimiento.
+            GifExpert es una página web que busca cualquier gif de cualquier
+            tema de interés.
           </p>
           <h1>Tecnologías</h1>
           <div class="group-skills">
@@ -645,17 +662,66 @@ import Developer from "@/components/Developer.astro";
                   <path
                     fill-rule="nonzero"
                     clip-rule="nonzero"
-                    d="M0 1.75C0 0.783501 0.783502 0 1.75 0H14.25C15.2165 0 16 0.783502 16 1.75V3.75C16 4.16421 15.6642 4.5 15.25 4.5C14.8358 4.5 14.5 4.16421 14.5 3.75V1.75C14.5 1.61193 14.3881 1.5 14.25 1.5H1.75C1.61193 1.5 1.5 1.61193 1.5 1.75V14.25C1.5 14.3881 1.61193 14.5 1.75 14.5H15.25C15.6642 14.5 16 14.8358 16 15.25C16 15.6642 15.6642 16 15.25 16H1.75C0.783501 16 0 15.2165 0 14.25V1.75ZM4.75 6.5C4.75 6.08579 5.08579 5.75 5.5 5.75H9.25C9.66421 5.75 10 6.08579 10 6.5C10 6.91421 9.66421 7.25 9.25 7.25H8.25V12.5C8.25 12.9142 7.91421 13.25 7.5 13.25C7.08579 13.25 6.75 12.9142 6.75 12.5V7.25H5.5C5.08579 7.25 4.75 6.91421 4.75 6.5ZM11.2757 6.58011C11.6944 6.08164 12.3507 5.75 13.25 5.75C14.0849 5.75 14.7148 6.03567 15.1394 6.48481C15.4239 6.78583 15.4105 7.26052 15.1095 7.54505C14.8085 7.82958 14.3338 7.81621 14.0493 7.51519C13.9394 7.39898 13.7204 7.25 13.25 7.25C12.7493 7.25 12.5306 7.41836 12.4243 7.54489C12.2934 7.70065 12.25 7.896 12.25 8C12.25 8.104 12.2934 8.29935 12.4243 8.45511C12.5306 8.58164 12.7493 8.75 13.25 8.75C13.3257 8.75 13.3988 8.76121 13.4676 8.78207C14.1307 8.87646 14.6319 9.17251 14.9743 9.58011C15.3684 10.0493 15.5 10.604 15.5 11C15.5 11.396 15.3684 11.9507 14.9743 12.4199C14.5556 12.9184 13.8993 13.25 13 13.25C12.1651 13.25 11.5352 12.9643 11.1106 12.5152C10.8261 12.2142 10.8395 11.7395 11.1405 11.4549C11.4415 11.1704 11.9162 11.1838 12.2007 11.4848C12.3106 11.601 12.5296 11.75 13 11.75C13.5007 11.75 13.7194 11.5816 13.8257 11.4551C13.9566 11.2993 14 11.104 14 11C14 10.896 13.9566 10.7007 13.8257 10.5449C13.7194 10.4184 13.5007 10.25 13 10.25C12.9243 10.25 12.8512 10.2388 12.7824 10.2179C12.1193 10.1235 11.6181 9.82749 11.2757 9.41989C10.8816 8.95065 10.75 8.396 10.75 8C10.75 7.604 10.8816 7.04935 11.2757 6.58011Z"
-                    fill="#3178c6"></path>
+                    d="M0 1.75C0 0.783501 0.783502 0 1.75 0H14.25C15.2165 0 16 0.783502 16 1.75V3.75C16 4.16421 15.6642 4.5 15.25 4.5C14.8358 4.5 14.5 4.16421 14.5 3.75V1.75C14.5 1.61193 14.3881 1.5 14.25 1.5H1.75C1.61193 1.5 1.5 1.61193 1.5 1.75V14.25C1.5 14.3881 1.61193 14.5 1.75 14.5H15.25C15.6642 14.5 16 14.8358 16 15.25C16 15.6642 15.6642 16 15.25 16H1.75C0.783501 16 0 15.2165 0 14.25V1.75ZM8.25 5.75C8.66421 5.75 9 6.08579 9 6.5V10.5C9 11.5048 8.72399 12.2584 8.15514 12.7324C7.61223 13.1848 6.95384 13.25 6.5 13.25C6.08579 13.25 5.75 12.9142 5.75 12.5C5.75 12.0858 6.08579 11.75 6.5 11.75C6.84617 11.75 7.06277 11.6902 7.19486 11.5801C7.301 11.4916 7.5 11.2452 7.5 10.5V6.5C7.5 6.08579 7.83578 5.75 8.25 5.75ZM11.2757 6.58011C11.6944 6.08164 12.3507 5.75 13.25 5.75C14.0849 5.75 14.7148 6.03567 15.1394 6.48481C15.4239 6.78583 15.4105 7.26052 15.1095 7.54505C14.8085 7.82958 14.3338 7.81621 14.0493 7.51519C13.9394 7.39898 13.7204 7.25 13.25 7.25C12.7493 7.25 12.5306 7.41836 12.4243 7.54489C12.2934 7.70065 12.25 7.896 12.25 8C12.25 8.104 12.2934 8.29935 12.4243 8.45511C12.5306 8.58164 12.7493 8.75 13.25 8.75C13.3257 8.75 13.3988 8.76121 13.4676 8.78207C14.1307 8.87646 14.6319 9.17251 14.9743 9.58011C15.3684 10.0493 15.5 10.604 15.5 11C15.5 11.396 15.3684 11.9507 14.9743 12.4199C14.5556 12.9184 13.8993 13.25 13 13.25C12.1651 13.25 11.5352 12.9643 11.1106 12.5152C10.8261 12.2142 10.8395 11.7395 11.1405 11.4549C11.4415 11.1704 11.9162 11.1838 12.2007 11.4848C12.3106 11.601 12.5296 11.75 13 11.75C13.5007 11.75 13.7194 11.5816 13.8257 11.4551C13.9566 11.2993 14 11.104 14 11C14 10.896 13.9566 10.7007 13.8257 10.5449C13.7194 10.4184 13.5007 10.25 13 10.25C12.9243 10.25 12.8512 10.2388 12.7824 10.2179C12.1193 10.1235 11.6181 9.82749 11.2757 9.41989C10.8816 8.95065 10.75 8.396 10.75 8C10.75 7.604 10.8816 7.04935 11.2757 6.58011Z"
+                    fill="#EEAF4B"></path>
                 </g></svg
               >
-              <p>Typescript</p>
+              <p>Javascript</p>
             </div>
             <div class="skills">
               <svg
                 width="19px"
                 height="19px"
-                viewBox="0 0 16 16"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
+                  ><title>file_type_vite</title><path
+                    d="M29.8836 6.146L16.7418 29.6457c-.2714.4851-.9684.488-1.2439.0052L2.0956 6.1482c-.3-.5262.1498-1.1635.746-1.057l13.156 2.3516a.7144.7144 0 00.2537-.0004l12.8808-2.3478c.5942-.1083 1.0463.5241.7515 1.0513z"
+                    fill="url(#paint0_linear)"></path><path
+                    d="M22.2644 2.0069l-9.7253 1.9056a.3571.3571 0 00-.2879.3294l-.5982 10.1038c-.014.238.2045.4227.4367.3691l2.7077-.6248c.2534-.0585.4823.1647.4302.4194l-.8044 3.9393c-.0542.265.1947.4918.4536.4132l1.6724-.5082c.2593-.0787.5084.1487.4536.414l-1.2784 6.1877c-.08.387.4348.598.6495.2662L16.5173 25 24.442 9.1848c.1327-.2648-.096-.5667-.387-.5106l-2.787.5379c-.262.0505-.4848-.1934-.4109-.4497l1.8191-6.306c.074-.2568-.1496-.5009-.4118-.4495z"
+                    fill="url(#paint1_linear)"></path><defs id="defs50"
+                    ><linearGradient
+                      id="paint0_linear"
+                      x1="6.0002"
+                      y1="32.9999"
+                      x2="235"
+                      y2="344"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
+                      ><stop stop-color="#41D1FF" id="stop38"></stop><stop
+                        offset="1"
+                        stop-color="#BD34FE"
+                        id="stop40"></stop></linearGradient
+                    ><linearGradient
+                      id="paint1_linear"
+                      x1="194.651"
+                      y1="8.8182"
+                      x2="236.076"
+                      y2="292.989"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
+                      ><stop stop-color="#FFEA83" id="stop43"></stop><stop
+                        offset=".0833"
+                        stop-color="#FFDD35"
+                        id="stop45"></stop><stop
+                        offset="1"
+                        stop-color="#FFA800"
+                        id="stop47"></stop></linearGradient
+                    ></defs
+                  ></g
+                ></svg
+              >
+              <p>Vite</p>
+            </div>
+            <div class="skills">
+              <svg
+                width="19px"
+                height="19px"
+                viewBox="0 0 48 48"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
@@ -663,53 +729,87 @@ import Developer from "@/components/Developer.astro";
                   stroke-linecap="round"
                   stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5C9.35329 14.5 10.6088 14.0871 11.6492 13.3799L6 6.57712V11.25C6 11.6642 5.66421 12 5.25 12C4.83579 12 4.5 11.6642 4.5 11.25V4.5C4.5 4.184 4.69807 3.9019 4.99529 3.79458C5.29251 3.68726 5.62511 3.77775 5.82699 4.02085L13.3008 13.0209C13.5622 13.3357 13.523 13.802 13.2127 14.0687C11.813 15.272 9.99057 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 8.76428 15.8926 9.50473 15.6916 10.2065C15.5936 10.5489 15.4733 10.8818 15.3325 11.2037C15.1665 11.5832 14.7243 11.7562 14.3448 11.5902C13.9653 11.4242 13.7922 10.982 13.9583 10.6025C14.0725 10.3413 14.1701 10.0712 14.2496 9.79351C14.4125 9.2247 14.5 8.6232 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5ZM10.5 3.75C10.9142 3.75 11.25 4.08579 11.25 4.5V7.5C11.25 7.91421 10.9142 8.25 10.5 8.25C10.0858 8.25 9.75 7.91421 9.75 7.5V4.5C9.75 4.08579 10.0858 3.75 10.5 3.75Z"
-                    fill="#000000"></path>
-                </g></svg
-              >
-              <p>Next.js</p>
-            </div>
-            <div class="skills">
-              <svg
-                width="19px"
-                height="19px"
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                    d="M37.8037 5H10.1963C9.01796 5 8.09502 6.01352 8.205 7.18668L10.8925 35.8534C10.959 36.5632 11.3984 37.1839 12.0457 37.4826L23.1619 42.6132C23.6937 42.8586 24.3063 42.8586 24.8381 42.6132L35.9543 37.4826C36.6016 37.1839 37.041 36.5632 37.1075 35.8534L39.795 7.18668C39.905 6.01352 38.982 5 37.8037 5Z"
+                    fill="#2F88FF"
+                    stroke="#000000"
+                    stroke-width="4"></path>
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.5 3C5.63333 3 4.46667 4 4 5.99999C4.7 4.99999 5.51667 4.625 6.45 4.87499C6.98252 5.01763 7.36314 5.43155 7.78443 5.88974C8.47074 6.63613 9.26506 7.49999 11 7.49999C12.8667 7.49999 14.0333 6.49999 14.5 4.5C13.8 5.49999 12.9833 5.87499 12.05 5.62499C11.5175 5.48235 11.1369 5.06844 10.7156 4.61025C10.0293 3.86386 9.23494 3 7.5 3ZM4 7.49999C2.13333 7.49999 0.966667 8.49998 0.5 10.5C1.2 9.49998 2.01667 9.12498 2.95 9.37498C3.48252 9.51762 3.86314 9.93154 4.28443 10.3897C4.97074 11.1361 5.76506 12 7.5 12C9.36667 12 10.5333 11 11 8.99998C10.3 9.99998 9.48333 10.375 8.55 10.125C8.01748 9.98234 7.63686 9.56843 7.21557 9.11023C6.52926 8.36385 5.73494 7.49999 4 7.49999Z"
-                    stroke="#06b6d4"
+                    d="M32 12H16L17 21H31L30 32L24 35L18 32L17.5 27"
+                    stroke="white"
+                    stroke-width="4"
+                    stroke-linecap="round"
                     stroke-linejoin="round"></path>
                 </g></svg
               >
-              <p>Tailwind</p>
+              <p>Html</p>
             </div>
             <div class="skills">
               <svg
                 width="19px"
                 height="19px"
-                viewBox="0 0 15 15"
-                fill="none"
+                viewBox="0 0 48 48"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
                 ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
                   id="SVGRepo_tracerCarrier"
                   stroke-linecap="round"
                   stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M2.5 11.5L11.5 3.5L12.5 12.5L7.5 14.5L2.5 11.5ZM2.5 11.5L7.5 2.5L9.5 5.5M2.5 11.5L3.5 0.5L6.5 3.5"
-                    stroke="#F6820D"
-                    stroke-linejoin="round"></path>
+                  <title>css</title>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="invisible_box" data-name="invisible box">
+                      <rect width="48" height="48" fill="none"></rect>
+                    </g>
+                    <g id="Q3_icons" data-name="Q3 icons">
+                      <path
+                        d="M24,46,8.3,41.7,5,4H43L39.7,41.7ZM12,38.6l12,3.3,12-3.3L38.6,8H9.4Z"
+                      ></path>
+                      <path
+                        d="M14,13H34L32.2,34.3,23.9,37l-8.4-2.1-.9-7.2h4.5v3.6l4.8.9,4.4-.9V25.9H14.6l-.3-4.5a2.3,2.3,0,0,1,1.5-.6c6.9,0,12.5.6,12.5.6V17.8H14.6Z"
+                      ></path>
+                    </g>
+                  </g>
                 </g></svg
               >
-              <p>Firebase</p>
+              <p>Css</p>
+            </div>
+            <div class="skills">
+              <svg
+                width="19px"
+                height="19px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                  <title>react</title>
+                  <rect width="24" height="24" fill="none"></rect>
+                  <path
+                    d="M12,10.11A1.87,1.87,0,1,1,10.13,12,1.88,1.88,0,0,1,12,10.11M7.37,20c.63.38,2-.2,3.6-1.7a24.22,24.22,0,0,1-1.51-1.9A22.7,22.7,0,0,1,7.06,16c-.51,2.14-.32,3.61.31,4m.71-5.74-.29-.51a7.91,7.91,0,0,0-.29.86c.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17,9,12.6,9,12,9s-1.17,0-1.71,0c-.29.47-.61.94-.91,1.47L8.57,12l.81,1.5c.3.53.62,1,.91,1.47.54,0,1.11,0,1.71,0s1.17,0,1.71,0c.29-.47.61-.94.91-1.47M12,6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0,10.44c.19-.22.39-.45.59-.72H11.41c.2.27.4.5.59.72M16.62,4c-.62-.38-2,.2-3.59,1.7a24.22,24.22,0,0,1,1.51,1.9,22.7,22.7,0,0,1,2.4.36c.51-2.14.32-3.61-.32-4m-.7,5.74.29.51a7.91,7.91,0,0,0,.29-.86c-.27-.06-.57-.11-.88-.16l.3.51m1.45-7c1.47.84,1.63,3.05,1,5.63,2.54.75,4.37,2,4.37,3.68s-1.83,2.93-4.37,3.68c.62,2.58.46,4.79-1,5.63s-3.45-.12-5.37-1.95c-1.92,1.83-3.91,2.79-5.38,1.95s-1.62-3-1-5.63c-2.54-.75-4.37-2-4.37-3.68S3.08,9.07,5.62,8.32c-.62-2.58-.46-4.79,1-5.63s3.46.12,5.38,1.95c1.92-1.83,3.91-2.79,5.37-1.95M17.08,12A22.51,22.51,0,0,1,18,14.26c2.1-.63,3.28-1.53,3.28-2.26S20.07,10.37,18,9.74A22.51,22.51,0,0,1,17.08,12M6.92,12A22.51,22.51,0,0,1,6,9.74c-2.1.63-3.28,1.53-3.28,2.26S3.93,13.63,6,14.26A22.51,22.51,0,0,1,6.92,12m9,2.26-.3.51c.31,0,.61-.1.88-.16a7.91,7.91,0,0,0-.29-.86l-.29.51M13,18.3c1.59,1.5,3,2.08,3.59,1.7s.83-1.82.32-4a22.7,22.7,0,0,1-2.4.36A24.22,24.22,0,0,1,13,18.3M8.08,9.74l.3-.51c-.31,0-.61.1-.88.16a7.91,7.91,0,0,0,.29.86l.29-.51M11,5.7C9.38,4.2,8,3.62,7.37,4s-.82,1.82-.31,4a22.7,22.7,0,0,1,2.4-.36A24.22,24.22,0,0,1,11,5.7Z"
+                  ></path>
+                </g></svg
+              >
+              <p>React</p>
+            </div>
+            <div class="skills">
+              <svg
+                fill="#000000"
+                width="19px"
+                height="19px"
+                viewBox="0 0 24 24"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"
+                  ><path
+                    d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 0 1-2.589 3.957 6.272 6.272 0 0 1-7.306-.933 6.575 6.575 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"
+                  ></path></g
+                ></svg
+              >
+              <p>Express.js</p>
             </div>
           </div>
           <div class="btn-works">

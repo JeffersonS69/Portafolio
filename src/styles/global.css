@@ -110,18 +110,19 @@ article {
 .btn-home {
   background-color: #131314;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: 2px solid transparent;
+  border-color: #fff;
   border-radius: 8px;
   font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .btn-home:hover {
-  background-color: #ffffff;
-  color: #131314;
-  font-weight: 600;
+  transform: translateY(-5px);
+  color: #00ccffcc;
+  border-color: #00ccffcc;
 }
 
 /* ABOUT */
@@ -349,6 +350,7 @@ article {
   background-color: #131314;
   border-radius: 12px;
   gap: 1.5rem;
+  overflow: hidden;
 }
 
 .card-img {
@@ -370,7 +372,7 @@ article {
   display: flex;
   flex-direction: column;
   width: 50%;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .card-text h1 {
@@ -384,7 +386,8 @@ article {
 
 .btn-works {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -430,14 +433,16 @@ article {
 
 .btn-works button:hover {
   transform: translateY(-5px);
-  color: #FFA611;
-  border-color: #FFA611;
+  color: #00ccffcc;
+  border-color: #00ccffcc;
   font-weight: 600;
 }
 
 .btn-works button:hover svg {
-  stroke: #FFA611;
+  stroke: #00ccffcc;
 }
+
+/* Experience */
 
 .box-experience {
   display: flex;
@@ -512,6 +517,8 @@ article {
   background-color: #131314;
 }
 
+/* Contact */
+
 .box-contact {
   display: flex;
   justify-content: center;
@@ -531,7 +538,8 @@ article {
 }
 
 .card-contact h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
+  filter: drop-shadow(0 0 5px #00ccffcc);
   margin: 1rem;
   text-align: center;
 }
@@ -551,7 +559,7 @@ article {
 
 .form-contact input:focus,
 textarea:focus {
-  outline: 2px solid #FFA611;
+  outline: 2px solid #00ccffcc;
   outline-offset: 2px;
 }
 
@@ -560,7 +568,7 @@ textarea:focus {
   border-radius: 8px;
   resize: none;
   height: 80px;
-  scrollbar-color: #FFA611 #131314;
+  scrollbar-color: #00ccffcc #131314;
 }
 
 .form-contact button {
@@ -577,8 +585,8 @@ textarea:focus {
 
 .form-contact button:hover {
   transform: translateY(-5px);
-  border-color: #FFA611;
-  color: #FFA611;
+  border-color: #00ccffcc;
+  color: #00ccffcc;
 }
 
 
