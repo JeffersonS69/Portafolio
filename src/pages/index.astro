@@ -14,7 +14,7 @@ import Developer from "@/components/Developer.astro";
         <h1>Soy <span>Jefferson Garcia</span></h1>
         <p class="text-home">Frontend Developer / Web Developer</p>
         <div class="box-btn-home">
-          <button class="btn-home">Descargar CV</button>
+          <button id="downloadCV" class="btn-home">Descargar CV</button>
           <button class="btn-home">Contactame</button>
         </div>
       </div>
@@ -991,5 +991,20 @@ import Developer from "@/components/Developer.astro";
     paragraph2.classList.add("hidden-para2");
     paragraph1.classList.remove("hidden-para2");
     paragraph1.classList.add("active-para1");
+  });
+
+  document.getElementById("downloadCV")?.addEventListener("click", () => {
+    const link = document.createElement("a");
+
+    link.href =
+      "https://drive.google.com/uc?export=download&id=1P2b6H5r6J7JIrpB_Ao9mN-PGLA8ULzR7";
+
+    link.download = "Jefferson_Garcia_CV.pdf";
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
   });
 </script>
