@@ -4,6 +4,7 @@ import foto from "@/assets/foto3.png";
 import deone from "@/assets/deone.png";
 import pagegif from "@/assets/page-gif.png";
 import Developer from "@/components/Developer.astro";
+import { actions } from "astro:actions";
 ---
 
 <Layout title="Portafolio">
@@ -920,9 +921,10 @@ import Developer from "@/components/Developer.astro";
       <div class="card-contact">
         <h1>¡Contáctame!</h1>
         <form
-          action="https://formspree.io/f/xnqoqzqz"
+          action={actions.send}
           method="POST"
           class="form-contact"
+          id="form-contact"
         >
           <label>Nombre completo</label>
           <input type="text" name="name" placeholder="Saul Goodman" required />
@@ -936,7 +938,7 @@ import Developer from "@/components/Developer.astro";
           <label>Mensaje</label>
           <textarea name="message" placeholder="Estimado..." required
           ></textarea>
-          <button type="submit">Enviar</button>
+          <button type="submit" id="submit-button">Enviar</button>
         </form>
       </div>
     </section>
@@ -1006,5 +1008,39 @@ import Developer from "@/components/Developer.astro";
     link.click();
 
     document.body.removeChild(link);
+  });
+
+  const form = document.getElementById("form-contact") as HTMLFormElement;
+  const submitButton = document.getElementById(
+    "submit-button",
+  ) as HTMLButtonElement;
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    submitButton.disabled = true;
+    const originalText = submitButton?.innerHTML;
+    submitButton.innerHTML = "Enviando...";
+
+    const formData = new FormData(form);
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert("Mensaje enviado con éxito");
+        form.reset();
+      } else {
+        alert("Hubo un problema al enviar el mensaje.");
+      }
+    } catch (error) {
+      alert("Error al enviar el formulario.");
+      console.error(error);
+    }
+
+    submitButton.innerHTML = originalText;
+    submitButton.disabled = false;
   });
 </script>

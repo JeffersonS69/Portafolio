@@ -64,10 +64,10 @@ import "@/styles/navbar.css";
             <h1 id="max-screen">ES</h1>
             <h1 id="min-screen">ESPAÑOL</h1>
         </a>
-        <a href="#">
+        <!--         <a href="#">
             <h1 id="max-screen">IN</h1>
             <h1 id="min-screen">INGLÉS</h1>
-        </a>
+        </a> -->
     </div>
     <div class="menu">
         <a href="#home" id="icon-home">
@@ -313,7 +313,7 @@ import "@/styles/navbar.css";
             const articleTop = article.offsetTop;
             const articleHeight = article.clientHeight;
             const icon = document.querySelector(`nav a[href="#${article.id}"]`);
-            
+
             icon?.addEventListener("click", () => {
                 navLinks.classList.remove("visible");
                 menuToggle.classList.remove("hidden");
