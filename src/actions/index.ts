@@ -11,7 +11,7 @@ export const server = {
             const email = ctx.get('email')
             const message = ctx.get('message')
 
-            const { data, error } = await resend.emails.send({
+            const result = await resend.emails.send({
                 from: `${name} <onboarding@resend.dev>`,
                 to: ["ibarra.jefferson1@gmail.com"],
                 subject: "Nuevo mensaje desde el formulario de contacto",
@@ -23,10 +23,10 @@ export const server = {
                         `,
             })
 
-            if (error) {
+            if (result.error) {
                 throw new ActionError({
                     code: "BAD_REQUEST",
-                    message: error.message,
+                    message: result.error.message,
                 })
             }
 
